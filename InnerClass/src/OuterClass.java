@@ -1,3 +1,4 @@
+import java.awt.*;
 
 //This class is an example of static class
 public class OuterClass {
@@ -31,10 +32,21 @@ public class OuterClass {
         System.out.println("This is OuterClass");
     }
 
-    public Class InnerClass{
+    public static void whoIsThisStatic(){
+        System.out.println("This is static method from Outer class");
+    }
+
+    public class InnerClass{
+
+        public int fakeage;
+
 
          public void whoIsThis(){
              System.out.println("This is InnerClass");
+        }
+
+        public static void whoIsThisStatic(){
+             System.out.println("This is static method from inner class");
         }
 
     }
