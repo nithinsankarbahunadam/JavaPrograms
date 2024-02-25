@@ -31,5 +31,12 @@ public class Main {
         outerinner2.WhichClassThis();
 
 
+        //the below example is to show an example localInner class
+
+        LocalInnerClass localinner1 = new LocalInnerClass("Chandhini", 27);
+
+        localinner1.showLocalInnerClass();
+
+
     }
 }
