@@ -26,4 +26,41 @@ public class OuterClass2 {
     public void setPersonage(int personage) {
         this.personage = personage;
     }
+
+    public void WhichClassThis(){
+        System.out.println("This is Outerclass which has static innerclass");
+    }
+
+    public static class InnerStatiClass{
+
+        String surname;
+
+        int personAge;
+
+        public InnerStatiClass(String surname, int personAge){
+            this.surname=surname;
+            this.personAge=personAge;
+
+        }
+
+        public String getSurname() {
+            return surname;
+        }
+
+        public void setSurname(String surname) {
+            this.surname = surname;
+        }
+
+        public int getPersonAge() {
+            return personAge;
+        }
+
+        public void setPersonAge(int personAge) {
+            this.personAge = personAge;
+        }
+
+        public void WhichClassThis(){
+            System.out.println("This is static innerclass");
+        }
+    }
 }
