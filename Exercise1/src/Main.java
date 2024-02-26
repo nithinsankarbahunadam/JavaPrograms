@@ -38,7 +38,9 @@ public class Main {
         vehBic[1]= new Bicycle(45,3);
         vehBic[2] = (Bicycle) new Vehicle(60,4);
 
-        for (int i=0; i<3; i++) System.out.println(vehBic[i]);
+        for (int i=0; i<2; i++) System.out.println(vehBic[i]);
+        Bicycle bicycle = (Bicycle) vehBic[2];
+        System.out.println(bicycle);
 
 
 
