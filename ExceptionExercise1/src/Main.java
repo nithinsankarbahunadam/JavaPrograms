@@ -1,24 +1,14 @@
-import java.util.InputMismatchException;
 import java.util.Scanner;
-public class Main {
-    public static void main(String[] args) throws AgeNotValidException, NullPointerException {
-
-        System.out.print("Enter the age: ");
-
-        Scanner valuein = null;
-
-        int valueage = 0;
+public class Main extends AgeLessThanZeroException {
+    public static void main(String[] args)throws NullPointerException, NumberFormatException {
         try {
-            valuein = new Scanner(System.in);
-            valueage = valuein.nextInt();
-
-
-        } catch (InputMismatchException ime) {
-            System.out.println("Enter a valid Input");
-        } finally {
-            System.out.println(AgeCheck.ageValidate(valueage));
+            System.out.print("Enter the age : ");
+            Scanner scanner = new Scanner(System.in);
+            int valuein = scanner.nextInt();
+            System.out.println(AgeCheck.ageValidate(valuein));
+        }catch(InputMismatchException ime){
+            new InputMismatchException("The given input is not valid");
         }
-
-
     }
+
 }

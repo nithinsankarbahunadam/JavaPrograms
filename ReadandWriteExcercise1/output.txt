@@ -1,0 +1,2 @@
+Hello, this is an example of using a buffer with FileOutputStream.
+and also an example of using a buffer to display this text
